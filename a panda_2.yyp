@@ -24,10 +24,13 @@
   "name":"a panda_2",
   "resources":[
     {"id":{"name":"Object_block","path":"objects/Object_block/Object_block.yy",},},
+    {"id":{"name":"Object_bullet","path":"objects/Object_bullet/Object_bullet.yy",},},
     {"id":{"name":"Object_enemy","path":"objects/Object_enemy/Object_enemy.yy",},},
     {"id":{"name":"Object_player","path":"objects/Object_player/Object_player.yy",},},
+    {"id":{"name":"Object_spawner","path":"objects/Object_spawner/Object_spawner.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Sprite_block","path":"sprites/Sprite_block/Sprite_block.yy",},},
+    {"id":{"name":"Sprite_bullet","path":"sprites/Sprite_bullet/Sprite_bullet.yy",},},
     {"id":{"name":"Sprite_enemy","path":"sprites/Sprite_enemy/Sprite_enemy.yy",},},
     {"id":{"name":"Sprite_player","path":"sprites/Sprite_player/Sprite_player.yy",},},
   ],

@@ -1,13 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"Object_enemy",
+  "%Name":"Object_bullet",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Object_bullet","path":"objects/Object_bullet/Object_bullet.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":{"name":"Object_enemy","path":"objects/Object_enemy/Object_enemy.yy",},"eventNum":0,"eventType":4,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"Object_enemy",
+  "name":"Object_bullet",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -32,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite_enemy",
-    "path":"sprites/Sprite_enemy/Sprite_enemy.yy",
+    "name":"Sprite_bullet",
+    "path":"sprites/Sprite_bullet/Sprite_bullet.yy",
   },
   "spriteMaskId":null,
   "visible":true,
