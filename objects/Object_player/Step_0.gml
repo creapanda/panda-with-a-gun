@@ -43,3 +43,27 @@ if (place_meeting(x, y, Object_enemy))
 {
     room_restart();
 }
+
+
+// ----------- EXP COLLISION -----------
+// Level up check
+if (player_exp >= exp_needed && !show_popup)
+{
+    player_exp -= exp_needed;
+    player_level += 1;
+
+    exp_needed = ceil(exp_needed * exp_growth);
+
+    show_popup = true;
+    popup_timer = 120; // 2 seconds
+}
+
+// Popup timer
+if (show_popup)
+{
+    popup_timer--;
+    if (popup_timer <= 0)
+    {
+        show_popup = false;
+    }
+}
