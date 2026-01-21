@@ -58,6 +58,12 @@ if (player_exp >= exp_needed && !show_popup)
 
     show_popup = true;
     popup_timer = 120; // 2 seconds
+	//increase the shooting rate
+	if (shoot_upgrade < shoot_delay)
+	{
+		
+		shoot_delay -= shoot_upgrade;
+	}	
 }
 
 // Popup timer

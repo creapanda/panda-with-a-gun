@@ -3,7 +3,7 @@ xsp = 0;
 ysp = 0;
 shoot_timer = 0.0;
 shoot_delay = 1.0; // 1 second
-
+shoot_upgrade = 0.2;
 
 //this is what we use for collison with exp
 player_exp = 0;
