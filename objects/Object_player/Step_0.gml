@@ -18,24 +18,26 @@ if (v != 0)
         while (!place_meeting(x, y + sign(v), Object_block)) y += sign(v);
 }
 
-// ----------- RECORD LAST MOVEMENT DIRECTION -----------
-if (h != 0 || v != 0)
-{
-    last_dir_x = sign(h);
-    last_dir_y = sign(v);
-}
+
 
 // ----------- AUTO SHOOT TIMER -----------
-shoot_timer += 1;
+// Delta time in seconds
+var dt = delta_time / 1000000;
+// Update timer
+shoot_timer += dt;
 
-// Always shoot in last movement direction
 if (shoot_timer >= shoot_delay)
 {
-    var b = instance_create_layer(x, y, "Instances", Object_bullet);
-    b.hsp = last_dir_x * 6;
-    b.vsp = last_dir_y * 6;
+    var target = instance_nearest(x, y, Object_enemy);
 
-    shoot_timer = 0;
+    if (target != noone)
+    {
+        var b = instance_create_layer(x, y, "Instances", Object_bullet);
+        b.direction = point_direction(x, y, target.x, target.y);
+        b.target = target;
+    }
+
+    shoot_timer -= shoot_delay; // keep leftover time
 }
 
 // ----------- ENEMY COLLISION -----------
