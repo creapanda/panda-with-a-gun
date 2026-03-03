@@ -5,5 +5,5 @@ if (show_popup)
 
     draw_set_color(c_white);
     draw_text(40, 35, "LEVEL UP!");
-    draw_text(40, 55, "Level " + string(player_level) + string("shooting speed is ") + string(shoot_delay));
+    draw_text(40, 55, "Level " + string(player_level) + string(" shooting speed is ") + string(shoot_delay));
 }

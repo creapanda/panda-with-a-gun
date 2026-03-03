@@ -1,4 +1,4 @@
-// ----------- MOVEMENT -----------
+// ======= MOVEMENT ======----------
 var h = keyboard_check(vk_right) - keyboard_check(vk_left);
 var v = keyboard_check(vk_down) - keyboard_check(vk_up);
 
@@ -40,7 +40,7 @@ if (shoot_timer >= shoot_delay)
     shoot_timer -= shoot_delay; // keep leftover time
 }
 
-// ----------- ENEMY COLLISION -----------
+//-------------- ENEMY COLLISION -----------
 if (place_meeting(x, y, Object_enemy))
 {
     room_restart();
