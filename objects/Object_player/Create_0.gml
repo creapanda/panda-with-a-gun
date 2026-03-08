@@ -14,3 +14,6 @@ exp_growth = 1.5;      // cost multiplier per level
 
 show_popup = false;
 popup_timer = 0;
+
+//wepon interac
+bomb_count = 0;

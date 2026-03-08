@@ -1,0 +1,1 @@
+bomb_count = 0;
